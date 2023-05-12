@@ -166,3 +166,20 @@ section {
   #ready_img{
     width: 100%;
   }
+
+  footer{
+    background-color: #007406;
+    min-height: 250px;
+    color:white;
+  }
+
+  .footer-btn {
+    margin-left: 10px;
+  }
+  .footer-btn a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer-btn a:hover{
+    color: tomato;
+  }
