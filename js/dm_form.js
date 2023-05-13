@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById("darkModeToggle");
     const darkModeEnabled = localStorage.getItem("darkModeEnabled");
+
     if (darkModeEnabled === "true") {
         enableDarkMode();
         darkModeToggle.checked = true;
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function enableDarkMode() {
         var currentPage = window.location.pathname;
         console.log(currentPage)
-        if (currentPage == '/index.html') {
+        if (currentPage != '/register.html') {
             document.getElementById("organization").classList.add("section-main-dark-mode");
             document.getElementById("partners").classList.add("section-main-dark-mode");
             document.getElementById("work_envolved").classList.add("section-main-dark-mode");
@@ -38,19 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("name_toggle").classList.add("toggleDark");
 
         svgs = document.getElementsByClassName("svg")
-        console.log(svgs)
         Array.from(svgs).forEach(function (svg) {
             svg.classList.add("waves-dm");
         });
 
         partners_light_logo = document.getElementsByClassName("partner-light-logo")
-        console.log(partners_light_logo)
         Array.from(partners_light_logo).forEach(function (logo) {
             logo.classList.add("d-none")
         });
 
         partners_dark_logo = document.getElementsByClassName("partner-dark-logo")
-        console.log(partners_dark_logo)
         Array.from(partners_dark_logo).forEach(function (logo) {
             logo.classList.remove("d-none")
         });
@@ -59,8 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function disableDarkMode() {
         var currentPage = window.location.pathname;
         console.log(currentPage)
-        if (currentPage == '/index.html') {
-            console
+        if (currentPage != '/register.html') {
             document.getElementById("organization").classList.remove("section-main-dark-mode");
             document.getElementById("partners").classList.remove("section-main-dark-mode");
             document.getElementById("work_envolved").classList.remove("section-main-dark-mode");
@@ -68,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
         if (currentPage == '/register.html'){   
-            console.log('ingrese')
             document.getElementById("main_register").classList.remove("section-main-dark-mode");
         }
         document.body.classList.remove("body-dark-mode");
@@ -112,7 +108,7 @@ function submitForm(event) {
 
     window.open(mailtoLink);
   }
-
+  
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('register_form');
     form.addEventListener('submit', submitForm);
