@@ -96,3 +96,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+function submitForm(event) {
+    event.preventDefault();
+
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    var subject = 'Registrame en Virbela Metaverso';
+    var body = 'Hola soy ' + name + ' mi mail es: ' + email + '\n Me comunico por: ' + message + '\n\n Espero le guste la web!';
+    var mailtoLink = 'mailto:gabriel.molina@unahur.edu.ar?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+    window.open(mailtoLink);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('register_form');
+    form.addEventListener('submit', submitForm);
+  });
