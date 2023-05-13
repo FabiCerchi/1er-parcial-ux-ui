@@ -1,58 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-  }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: black;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     font-size: 14px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     box-sizing: border-box;
-  }
+}
 
-nav{
-    min-height:80px
-  }
+nav {
+    min-height: 80px
+}
+
 header {
     min-height: 600px;
-    background-image: linear-gradient(
-        0deg,
-        hsl(219deg 97% 70%) 0%,
-        hsl(219deg 98% 68%) 11%,
-        hsl(219deg 99% 66%) 22%,
-        hsl(219deg 100% 65%) 33%,
-        hsl(219deg 100% 63%) 44%,
-        hsl(219deg 100% 61%) 56%,
-        hsl(219deg 100% 59%) 67%,
-        hsl(219deg 99% 57%) 78%,
-        hsl(218deg 99% 54%) 89%,
-        hsl(217deg 100% 50%) 100%
-      );
-      color:azure;
+    background-image: linear-gradient(0deg,
+            hsl(219deg 97% 70%) 0%,
+            hsl(219deg 98% 68%) 11%,
+            hsl(219deg 99% 66%) 22%,
+            hsl(219deg 100% 65%) 33%,
+            hsl(219deg 100% 63%) 44%,
+            hsl(219deg 100% 61%) 56%,
+            hsl(219deg 100% 59%) 67%,
+            hsl(219deg 99% 57%) 78%,
+            hsl(218deg 99% 54%) 89%,
+            hsl(217deg 100% 50%) 100%);
+    color: azure;
 }
-img{
-    width: 100%;    
+
+img {
+    width: 100%;
 }
-/*
-header h1{
-    font-size: 42px;
-    font-weight: 500;
-    
+header img {
+    border: 1.6px solid white;
+
 }
-*/
-header img{
-    border:1.6px solid white;
-}
+
 .hero-card-info p {
     font-size: 26px;
     line-height: 40px;
 }
-.hero-card-buttons{
+
+.hero-card-buttons {
     width: 100%;
 }
-.hero-card-buttons .btn{
+
+.hero-card-buttons .btn {
     padding: 6px;
     text-align: center;
     width: 126px;
@@ -60,50 +59,60 @@ header img{
     font-weight: bold;
     color: white;
 }
-.hero-card-buttons .btn-white{
+
+.hero-card-buttons .btn-white {
     border: 2px solid white;
     border-radius: 20px;
 }
-.hero-card-buttons .btn-white:hover{
+
+.hero-card-buttons .btn-white:hover {
     background-color: white;
-    color:rgb(251, 75, 44);
+    color: rgb(251, 75, 44);
 }
 
-.hero-card-buttons .btn-red{
+.hero-card-buttons .btn-red {
     background-color: rgb(251, 75, 44);
 
     border-radius: 20px;
 }
-.hero-card-buttons .btn-red:hover{
+
+.hero-card-buttons .btn-red:hover {
     background-color: rgb(197, 33, 4);
 }
 
 /* MEDIA QUERYS */
 @media (max-width: 990px) {
-    header{
+    header {
         height: auto;
     }
 
 }
 
 section {
-    min-height: 300px;
+    min-height: 400px;
 }
 
-.main-partner img{
+.main-partner img {
     width: 60px;
     padding: 6px;
+
+}
+
+.partner-light-logo {
     opacity: 0.6;
 }
-.organization{
+
+.organization {
     min-height: 300px;
     width: 350px;
     margin: 10px;
 }
-.organization > *{
+
+.organization>* {
     margin-top: 15px;
 }
-.organization img{
+
+.organization img {
     width: 226px;
 }
 
@@ -113,7 +122,7 @@ section {
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 
 #build_future {
@@ -122,20 +131,20 @@ section {
     line-height: 40px;
 }
 
-#build_future .btn-white{
-    border:2px solid white;
+#build_future .btn-white {
+    border: 2px solid white;
     border-radius: 20px;
     width: 150px;
     color: white;
-    
+
 }
 
-#build_future .btn-white:hover{
-   background-color:white;
-   color: black;
+#build_future .btn-white:hover {
+    background-color: white;
+    color: black;
 }
 
-.partners-logo img{
+.partners-logo img {
     width: 150px;
     opacity: 0.7;
     margin: 10px;
@@ -148,59 +157,123 @@ section {
 
 .zoom-image {
     transition: transform 0.3s;
-  }
-  
-  .zoom-container {
+}
+
+.zoom-container {
     overflow: hidden;
-  }
-  
-  .zoom-image {
+}
+
+.zoom-image {
     transition: transform 0.3s;
-  }
-  
-  .zoom-container:hover .zoom-image {
+}
+
+.zoom-container:hover .zoom-image {
     transform: scale(1.2);
-  }
+}
 
 
-  #ready_img{
+#ready_img {
     width: 100%;
-  }
+}
 
-  footer{
-    background-color: #007406;
+footer {
+    background-color: #099e10;
     min-height: 200px;
-    color:white;
-  }
+    color: white;
+}
 
-  .footer-btn {
+.footer-btn {
     margin-left: 10px;
-  }
-  .footer-btn a{
+}
+
+.footer-btn a {
     color: white;
     text-decoration: none;
-  }
-  .footer-btn a:hover{
-    color: tomato;
-  }
+}
 
-  .toggle-container {
+.footer-btn a:hover {
+    color: tomato;
+}
+
+/* DARK MODE TOGGLE */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+}
+
+input[type="checkbox"]:checked+.slider {
+    background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+/* DARK MODE */
+.toggle-container {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-  }
 
-  .toggle-label {
-    margin-right: 10px;
-  }
+}
 
+.body-dark-mode {
+    background: rgb(113, 2, 163);
+    background: linear-gradient(180deg, rgba(113, 2, 163, 1) 23%, rgba(187, 2, 189, 1) 100%, rgba(213, 0, 176, 1) 100%);
+    border-left: 1px solid yellow;
+    border-right: 1px solid yellow;
+    box-shadow: -6px 37px 180px 71px rgba(232, 112, 225, 0.75);
+    -webkit-box-shadow: -6px 37px 180px 71px rgba(213, 152, 209, 0.75);
+    -moz-box-shadow: -6px 37px 180px 71px rgba(232, 112, 225, 0.75);
+}
 
-  .body-dark-mode {
-    background: rgb(113,2,163);
-    background: linear-gradient(180deg, rgba(113,2,163,1) 23%, rgba(187,2,189,1) 100%, rgba(213,0,176,1) 100%);
-  }
-
-  .main-dark-mode {
+.section-main-dark-mode {
     background-color: rgb(0, 0, 0);
     color: white;
-  }
+
+}
+
+.nav-font-dark-mode {
+    color: white;
+}
+
+.main-img-metaverso-dm {
+    border: 1.6px solid yellow;
+    box-shadow: -6px 37px 180px 9px rgba(167, 117, 227, 0.75);
+    -webkit-box-shadow: -6px 37px 180px 9px rgba(167, 117, 227, 0.75);
+    -moz-box-shadow: -6px 37px 180px 9px rgba(167, 117, 227, 0.75);
+}
+
+.waves-dm {
+    background-color: black;
+}
