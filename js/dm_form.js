@@ -107,7 +107,7 @@ function submitForm(event) {
     var message = document.getElementById('message').value;
 
     var subject = 'Registrame en Virbela Metaverso';
-    var body = 'Hola soy ' + name + ' mi mail es: ' + email + '\n Me comunico por: ' + message + '\n\n Espero le guste la web!';
+    var body = 'Hola soy ' + name + ' mi mail es' + email + '\n Asunto: ' + message + '\n\n Espero le guste la web!';
     var mailtoLink = 'mailto:gabriel.molina@unahur.edu.ar?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
     window.open(mailtoLink);
