@@ -277,3 +277,26 @@ input[type="checkbox"]:checked+.slider:before {
 .waves-dm {
     background-color: black;
 }
+
+.animated-link {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .animated-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.6px;
+    background-color: rgb(204, 59, 237);
+    transition: width 0.4s ease;
+  }
+  
+  .animated-link:hover::after {
+    width: 100%;
+  }
